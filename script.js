@@ -1,3 +1,3 @@
-function toggleContent(bubble) {
+function toggleContent(bubble){
     bubble.classList.toggle('active');
 }
