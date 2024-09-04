@@ -10,6 +10,9 @@
         </head>
 
         <body>
+
+            <!-- Header -->
+
             <header>
                 <nav>
                     <div class="logo">
@@ -17,8 +20,8 @@
                     </div>
                     <ul class="nav-links">
                         <li><a href="#hero">Accueil</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#about">À propos</a></li>
+                        <li><a href="#portfolio">Nos Projets</a></li>
+                        <li><a href="#about">À Propos</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                     <div class="search-icon">
@@ -27,113 +30,120 @@
                 </nav>
             </header>
 
+            <!-- Page d'accueil -->
+
             <section id="hero" class="hero">
                 <h1>Bienvenue sur mon site vitrine</h1>
                 <p>Nous offrons des solutions créatives et innovantes pour propulser votre entreprise.</p>
                 <a href="#about" class="cta">En savoir plus</a>
             </section>
 
+            <!-- Nos Projets -->
+            
             <section id="portfolio" class="portfolio">
                 <h2>Nos Projets</h2>
-                <div class="bubble-container">
-                    <div class="bubble" onclick="toggleContent(this)">
-                        <h3>Projet 1</h3>
+                <div class="bubble-container projects-bubbles">
+                    <div class="bubble project-bubble" onclick="toggleContent(this)">
+                        <h1>Projet 1</h1>
                         <div class="content">
                             <p>
                                 <strong>Titre :</strong> 
-                                Site e-commerce pour une marque de vêtements
+                                Boutique de vêtements
                             </p>
                             <p>
                                 <strong>Description :</strong>
-                                Nous avons conçu et développé une plateforme e-commerce moderne pour une marque de mode, intégrant des solutions de paiement sécurisées,
-                                un système de gestion des stocks en temps réel, et une interface utilisateur intuitive pour améliorer l'expérience d'achat.
+                                Création d'un site e-commerce pour une boutique de vêtements.
                             </p>
                             <p>
-                                <strong>Technologies :</strong>
-                                HTML, CSS, JavaScript, Shopify
+                                <strong>Outils utilisés :</strong>
+                                HTML, CSS, JavaScript, WooCommerce.
                             </p>
                         </div>
                     </div>
-                    <div class="bubble" onclick="toggleContent(this)">
-                        <h3>Projet 2</h3>
+                    <div class="bubble project-bubble" onclick="toggleContent(this)">
+                        <h1>Projet 2</h1>
                         <div class="content">
                             <p>
                                 <strong>Titre :</strong>
-                                Application mobile pour la gestion des rendez-vous vétérinaire.
+                                Gestion de tâches
                             </p>
                             <p>
                                 <strong>Description :</strong>
-                                Développement d'une application mobile permettant aux propriétaires d'animaux de compagnie
-                                de prendre facilement des rendez-vous, recevoir des rappels et accéder aux dossiers médicaux de leurs animaux.
-                                L'application est compatible avec iOS et Android.
+                                Développement d'une application mobile de gestion de tâches.
                             </p>
                             <p>
-                                <strong>Technologies :</strong>
-                                Flutter, Firebase, Google Maps API
+                                <strong>Outils utilisés :</strong>
+                                React Native, Firebase, Redux.
                             </p>
                         </div>
                     </div>
-                    <div class="bubble" onclick="toggleContent(this)">
-                        <h3>Projet 3</h3>
+                    <div class="bubble project-bubble" onclick="toggleContent(this)">
+                        <h1>Projet 3</h1>
                         <div class="content">
                             <p>
                                 <strong>Titre :</strong>
-                                Refonte du site web d'une agence de voyage
+                                Agence immobilière
                             </p>
                             <p>
                                 <strong>Description :</strong>
-                                Nous avons complètement repensé le site web d'une agence de voyage pour améliorer l'expérience utilisateur et augmenter
-                                les conversions. Le site inclut désormais une fonctionnalité de réservation en ligne, des guides de voyage interactifs,
-                                et une section de blog pour partager des conseils et des expériences de voyage.
+                                Refonte du site web d'une agence immobilière.
                             </p>
                             <p>
-                                <strong>Technologies :</strong>
-                                WordPress, PHP, jQuery
+                                <strong>Outils utilisés :</strong>
+                                WordPress, PHP, MySQL.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
 
+            <!-- About Us -->
+
             <section id="about" class="about">
                 <h2>À propos de nous</h2>
-                <div class="bubble-container">
-                    <div class="bubble" onclick="toggleContent(this)">
+                <div class="bubble-container about-bubbles">
+                    <div class="bubble about-bubble" onclick="toggleContent(this)">
                         <img src="img/PhotoDorian.jpg" alt="Image 1" class="bubble-image">
                         <div class="content">
                             <h3>Dorian DUTILLEUL</h3>
                             <h5>Web Designer - Développeur Web</h5>
                             <p>
-                                J'ai commencé mon parcours en informatique avec un BTS SIO, puis je me suis formé dans deux autres domaines :
-                                la communication et le web design. Grâce à cette combinaison de compétences, je suis en mesure de vous offrir des services à la fois
-                                fructueux et complets, tout en assurant un suivi attentif.
+                                Je m'appelle Dorian. J'ai commencé mon parcours en informatique avec un BTS SIO,
+                                puis je me suis formé dans deux autres domaines : la communication et le web design.
+                                Grâce à cette combinaison de compétences, je suis en mesure de vous offrir des services
+                                à la fois fructueux et complets, tout en assurant un suivi attentif.
                             </p>
                         </div>
                     </div>
-                    <div class="bubble" onclick="toggleContent(this)">
+                    <div class="bubble about-bubble" onclick="toggleContent(this)">
                         <img src="img/Logo.png" alt="Image 2" class="bubble-image">
                         <div class="content">
+                            <h3>Notre Histoire</h3>
                             <p>
-                                Animés par une passion commune pour l'informatique, les jeux vidéo et la musique, nous avons décidé de mettre
-                                notre expertise au service des entreprises. Nous croyons que chaque entreprise mérite une identité forte et distinctive sur internet.
-                                C'est pourquoi nous proposons des solutions sur mesure pour aider les entreprises à se démarquer en ligne, avec des designs innovants,
-                                des sites web performants, et une présence numérique qui reflète leur vraie essence.
+                                Animés par une passion commune pour l'informatique, les jeux vidéo et la musique,
+                                nous avons décidé de mettre notre expertise au service des entreprises.
+                                Nous croyons que chaque entreprise mérite une identité forte et distinctive sur internet.
+                                C'est pourquoi nous proposons des solutions sur mesure pour aider les entreprises à se démarquer en ligne,
+                                avec des designs innovants, des sites web performants, et une présence numérique qui reflète leur vraie essence.
                             </p>
                         </div>
                     </div>
-                    <div class="bubble" onclick="toggleContent(this)">
+                    <div class="bubble about-bubble" onclick="toggleContent(this)">
                         <img src="img/PhotoAntoine.jpg" alt="Image 3" class="bubble-image">
                         <div class="content">
                             <h3>Antoine WYBIER</h3>
                             <h5>Développeur Web - Technicien</h5>
                             <p>
-                                Avec un BTS SIO option SLAM en poche, je me suis formé à la fois en développement web et en réseaux, ce qui me permet de combiner compétences
-                                techniques et relation client. En collaboration avec Dorian, nous répondons à tous vos besoins pour vous offrir une satisfaction complète.
+                                Avec un BTS SIO option SLAM en poche, je me suis formé à la fois en développement web et en réseaux,
+                                ce qui me permet de combiner compétences techniques et relation client. En collaboration avec Dorian,
+                                nous répondons à tous vos besoins pour vous offrir une satisfaction complète.
                             </p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <!-- Contact -->
 
             <section id="contact" class="contact">
                 <h2>Contactez-nous</h2>
@@ -153,20 +163,10 @@
                 </div>
             </section>
 
+            <!-- Footer -->
+
             <footer>
                 <p>Copyright &copy; 2024. Tous droits réservés.</p>
             </footer>
         </body>
     </html>
-
-
-    <!-- 
-    
-    taffer sur la scrollbar
-    trouver la bonne DA
-    trouver les bonnes pp / voir pour chercher un photographe
-    redimmensionner le logo
-    revoir le formulaire de contact
-    taffer la partie projets
-    
-    -->
