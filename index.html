@@ -1,172 +1,82 @@
 <!DOCTYPE html>
-    <html lang="fr">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <link rel="stylesheet" href="styles.css">
-            <script src="script.js"></script>
-            <title>TechUnited</title>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-        </head>
-
-        <body>
-
-            <!-- Header -->
-
-            <header>
-                <nav>
-                    <div class="logo">
-                        <img src="img/logo.png" alt="Nouveau Logo" width="100" height="100">
-                    </div>
-                    <ul class="nav-links">
-                        <li><a href="#hero">Accueil</a></li>
-                        <li><a href="#portfolio">Nos Projets</a></li>
-                        <li><a href="#about">À Propos</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                    <div class="search-icon">
-                        <i class="fas fa-search"></i>
-                    </div>
-                </nav>
-            </header>
-
-            <!-- Page d'accueil -->
-
-            <section id="hero" class="hero">
-                <h1>Bienvenue sur mon site vitrine</h1>
-                <p>Nous offrons des solutions créatives et innovantes pour propulser votre entreprise.</p>
-                <a href="#about" class="cta">En savoir plus</a>
-            </section>
-
-            <!-- Nos Projets -->
-            
-            <section id="portfolio" class="portfolio">
-                <h2>Nos Projets</h2>
-                <div class="bubble-container projects-bubbles">
-                    <div class="bubble project-bubble" onclick="toggleContent(this)">
-                        <h1>Projet 1</h1>
-                        <div class="content">
-                            <p>
-                                <strong>Titre :</strong> 
-                                Boutique de vêtements
-                            </p>
-                            <p>
-                                <strong>Description :</strong>
-                                Création d'un site e-commerce pour une boutique de vêtements.
-                            </p>
-                            <p>
-                                <strong>Outils utilisés :</strong>
-                                HTML, CSS, JavaScript, WooCommerce.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bubble project-bubble" onclick="toggleContent(this)">
-                        <h1>Projet 2</h1>
-                        <div class="content">
-                            <p>
-                                <strong>Titre :</strong>
-                                Gestion de tâches
-                            </p>
-                            <p>
-                                <strong>Description :</strong>
-                                Développement d'une application mobile de gestion de tâches.
-                            </p>
-                            <p>
-                                <strong>Outils utilisés :</strong>
-                                React Native, Firebase, Redux.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bubble project-bubble" onclick="toggleContent(this)">
-                        <h1>Projet 3</h1>
-                        <div class="content">
-                            <p>
-                                <strong>Titre :</strong>
-                                Agence immobilière
-                            </p>
-                            <p>
-                                <strong>Description :</strong>
-                                Refonte du site web d'une agence immobilière.
-                            </p>
-                            <p>
-                                <strong>Outils utilisés :</strong>
-                                WordPress, PHP, MySQL.
-                            </p>
-                        </div>
-                    </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Login Form using HTML CSS Only | Codehal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-box">
+            <h2>Audit</h2>
+            <form action="#">
+                <div class="input-box">
+                    <input type="name" required>
+                    <label>Nom de votre entreprise</label>
                 </div>
-            </section>
-
-            <!-- About Us -->
-
-            <section id="about" class="about">
-                <h2>À propos de nous</h2>
-                <div class="bubble-container about-bubbles">
-                    <div class="bubble about-bubble" onclick="toggleContent(this)">
-                        <img src="img/Dorian.JPG" alt="Image 1" class="bubble-image">
-                        <div class="content">
-                            <h3>Dorian DUTILLEUL</h3>
-                            <h5>Web Designer - Développeur Web</h5>
-                            <p>
-                                Je m'appelle Dorian. J'ai commencé mon parcours en informatique avec un BTS SIO,
-                                puis je me suis formé dans deux autres domaines : la communication et le web design.
-                                Grâce à cette combinaison de compétences, je suis en mesure de vous offrir des services
-                                à la fois fructueux et complets, tout en assurant un suivi attentif.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bubble about-bubble" onclick="toggleContent(this)">
-                        <img src="img/Logo.png" alt="Image 2" class="bubble-image">
-                        <div class="content">
-                            <h3>Notre Histoire</h3>
-                            <p>
-                                Animés par une passion commune pour l'informatique, les jeux vidéo et la musique,
-                                nous avons décidé de mettre notre expertise au service des entreprises.
-                                Nous croyons que chaque entreprise mérite une identité forte et distinctive sur internet.
-                                C'est pourquoi nous proposons des solutions sur mesure pour aider les entreprises à se démarquer en ligne,
-                                avec des designs innovants, des sites web performants, et une présence numérique qui reflète leur vraie essence.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="bubble about-bubble" onclick="toggleContent(this)">
-                        <img src="img/Antoine.jpg" alt="Image 3" class="bubble-image">
-                        <div class="content">
-                            <h3>Antoine WYBIER</h3>
-                            <h5>Développeur Web - Technicien</h5>
-                            <p>
-                                Avec un BTS SIO option SLAM en poche, je me suis formé à la fois en développement web et en réseaux,
-                                ce qui me permet de combiner compétences techniques et relation client. En collaboration avec Dorian,
-                                nous répondons à tous vos besoins pour vous offrir une satisfaction complète.
-                            </p>
-                        </div>
-                    </div>
+                <div class="input-box">
+                    <input type="email" required>
+                    <label>Votre email</label>
                 </div>
-            </section>
-
-            <!-- Contact -->
-
-            <section id="contact" class="contact">
-                <h2>Contactez-nous</h2>
-                <div class="contact-form">
-                    <form>
-                        <label for="name">Nom :</label>
-                        <input type="text" id="name" name="name" required>
-            
-                        <label for="email">Email :</label>
-                        <input type="email" id="email" name="email" required>
-            
-                        <label for="message">Message :</label>
-                        <textarea id="message" name="message" required></textarea>
-            
-                        <button type="submit">Envoyer</button>
-                    </form>
+                <div class="input-box">
+                    <input type="text" required>
+                    <label>Votre projet</label>
                 </div>
-            </section>
-
-            <!-- Footer -->
-
-            <footer>
-                <p>Copyright &copy; 2024. Tous droits réservés.</p>
-            </footer>
-        </body>
-    </html>
+                <button type="submit" class="btn">Envoyer</button>
+            </form>
+        </div>
+        <span style="--i:0;"></span>
+        <span style="--i:1;"></span>
+        <span style="--i:2;"></span>
+        <span style="--i:3;"></span>
+        <span style="--i:4;"></span>
+        <span style="--i:5;"></span>
+        <span style="--i:6;"></span>
+        <span style="--i:7;"></span>
+        <span style="--i:8;"></span>
+        <span style="--i:9;"></span>
+        <span style="--i:10;"></span>
+        <span style="--i:11;"></span>
+        <span style="--i:12;"></span>
+        <span style="--i:13;"></span>
+        <span style="--i:14;"></span>
+        <span style="--i:15;"></span>
+        <span style="--i:16;"></span>
+        <span style="--i:17;"></span>
+        <span style="--i:18;"></span>
+        <span style="--i:19;"></span>
+        <span style="--i:20;"></span>
+        <span style="--i:21;"></span>
+        <span style="--i:22;"></span>
+        <span style="--i:23;"></span>
+        <span style="--i:24;"></span>
+        <span style="--i:25;"></span>
+        <span style="--i:26;"></span>
+        <span style="--i:27;"></span>
+        <span style="--i:28;"></span>
+        <span style="--i:29;"></span>
+        <span style="--i:30;"></span>
+        <span style="--i:31;"></span>
+        <span style="--i:32;"></span>
+        <span style="--i:33;"></span>
+        <span style="--i:34;"></span>
+        <span style="--i:35;"></span>
+        <span style="--i:36;"></span>
+        <span style="--i:37;"></span>
+        <span style="--i:38;"></span>
+        <span style="--i:39;"></span>
+        <span style="--i:40;"></span>
+        <span style="--i:41;"></span>
+        <span style="--i:42;"></span>
+        <span style="--i:43;"></span>
+        <span style="--i:44;"></span>
+        <span style="--i:45;"></span>
+        <span style="--i:46;"></span>
+        <span style="--i:47;"></span>
+        <span style="--i:48;"></span>
+        <span style="--i:49;"></span>
+    </div>
+</body>
+</html>
